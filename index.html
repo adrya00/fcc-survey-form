@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 
 <head>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>TableTop Sage Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -10,22 +13,24 @@
     <p id="description">Thank you for taking the time to let me know how i'm doing and help improve the content</p>
 
     <form id="survey-form">
-
         <div class="form-group">
             <label id="name-label" for="name">Name: </label>
-            <input type="text" id="name" placeholder="Enter your name">
+            <br>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required> 
         </div>
         <div class="form-group">
             <label id="email-label" for="email">Email: </label>
-            <input type="email" id="email" placeholder="Enter your email">
+            <br>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
         </div>
         <div class="form-group">
             <label id="number-label" for="number">Age: </label>
-            <input type="number" id="number" min="6" max="99" placeholder="Enter age">
+            <br>
+            <input type="number" class="form-control" id="number" min="6" max="99" placeholder="Enter age">
         </div>
         <div class="form-group">
             <p>Choose your level:</p>
-            <select id="dropdown">
+            <select id="dropdown" class="form-control">
                 <option value="game master">Game Master</option>
                 <option value="advanced player">Advanced Player</option>
                 <option value="casual">Casual</option>
@@ -33,47 +38,72 @@
             </select>
         </div>
 
-        <div class="form-group">
-            <p>Would you recommend this site to a friend?</p>
-            <label>
-                <input type="radio" name="dog">Definitely
-            </label>
-            <label>
-                <input type="radio" name="recommend">Maybe
-            </label>
-            <label>
-                <input type="radio" name="recommend">Not Sure
-            </label>
+        <p>Would you recommend this site to a friend?</p> 
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="recommend" value="definitely">
+            <label class="form-check-label">Definitely</label>
+        </div>
+            
+        <div class="form-check">                
+            <input type="radio" class="form-check-input" name="recommend" value="maybe">
+            <label class="form-check-label">Maybe</label>
         </div>
 
-        <div class="form-group">
-            <label>What would you like to see improved?</label>
-            <label>
-                <input value="Stragaties" type="checkbox" name="improvement" class="input-checkbox">DM
-                Stragaties</label>
-            <label>
-                <input value="Campaigns" type="checkbox" name="improvement" class="input-checkbox">Campaigns</label>
-            <label>
-                <input value="Tips" type="checkbox" name="improvement" class="input-checkbox">Player Tips</label>
-            <label>
-                <input value="art" type="checkbox" name="improvement" class="input-checkbox">Art</label>
-            <label>
-                <input value="Stories" type="checkbox" name="improvement" class="input-checkbox">Player Stories</label>
-            <label>
-                <input value="History" type="checkbox" name="improvement" class="input-checkbox">History</label>
-            <label>
-                <input value="Challenges" type="checkbox" name="improvement" class="input-checkbox">Challenges</label>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="recommend" value="not sure">
+            <label class="form-check-label">Not Sure</label>
         </div>
+        <br>
 
+        <p>What would you like to see improved?</p>
+        
+            
+                <div class="form-check">
+                    <input value="Stragaties" class="form-check-input" type="checkbox" name="improvement" class="input-checkbox">DM
+                    <label class="form-check-label">Stragaties</label>
+                </div>
+            
+                <div class="form-check">
+                    <input value="Campaigns" class="form-check-input" type="checkbox" name="improvement" class="input-checkbox">
+                    <label class="form-check-label">Campaigns</label>
+                </div>
+
+                <div class="form-check">
+                    <input value="Tips" class="form-check-input" type="checkbox" name="improvement" class="input-checkbox">
+                    <label class="form-check-label">Player Tips</label>
+                </div>
+
+                <div class="form-check">
+                    <input value="art" class="form-check-input" type="checkbox" name="improvement" class="input-checkbox">
+                    <label  class="form-check-label">Art</label>
+                </div>
+
+                <div class="form-check">
+                    <input value="Stories" class="form-check-input" type="checkbox" name="improvement" class="input-checkbox">
+                    <label class="form-check-label">Player Stories</label>
+                </div>
+
+                <div class="form-check">
+                    <input value="History" class="form-check-input" type="checkbox" name="improvement" class="input-checkbox">
+                    <label class="form-check-label">History</label>
+                </div>
+
+                <div class="form-check">
+                    <input value="Challenges" class="form-check-input" type="checkbox" name="improvement" class="input-checkbox">
+                    <label class="form-check-label">Challenges</label>
+                </div>
+
+                <br>
+        
         <div class="form-group">
             <p>Any comments or suggestions?</p>
-            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">
+            <textarea id="comments" class="form-control" class="input-textarea" rows="6" name="comment" placeholder="Enter your comment here...">
         </textarea>
         </div>
 
-        <div class="form-group">
-            <input type="submit" value="Submit">
-        </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" value="Submit">Submit</button>
     </form>
 
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>

@@ -1,0 +1,70 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    background-image: linear-gradient(to bottom right, #FBE8A6, #E7717D);
+    color: #442c24;
+}
+
+#title{
+    text-align: center;
+    color: #442c24;
+
+}
+
+#description{
+    text-align: center;
+    font-style: italic;
+    color: #442c24;
+
+}
+
+p{
+    font-weight: bold;
+}
+
+#survey-form{
+    background-color: #d5dadd98;
+    border-radius: 10px;
+    width: 700px;
+    padding: 20px 40px;
+    margin: 0px auto;
+}
+
+#name-label{
+    font-weight: bold;
+}
+
+#email-label{
+    font-weight: bold;
+}
+
+#number-label{
+    font-weight: bold;
+}
+
+#name{
+    border-radius: 7px;
+    
+}
+
+#email{
+    border-radius: 7px;
+}
+
+#number{
+    border-radius: 7px;
+}
+
+#dropdown{
+    border-radius: 7px;
+}
+
+#comments{
+    border-radius: 7px;
+}
+
+#submit{
+    border-radius: 7px;
+    background-color: #5ba858;
+    border: #7e685A;
+}
