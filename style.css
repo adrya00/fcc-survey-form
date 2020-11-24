@@ -11,16 +11,19 @@ body{
 
 }
 
+p{
+    font-weight: bold;
+}
+
 #description{
     text-align: center;
     font-style: italic;
     color: #442c24;
+    font-weight: normal;
 
 }
 
-p{
-    font-weight: bold;
-}
+
 
 #survey-form{
     background-color: #d5dadd98;
